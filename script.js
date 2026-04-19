@@ -238,7 +238,7 @@ const nextSlide = function () {
   goToSlide(curSlide);
 };
 
-btnRight.addEventListener('click', nextSlide);
+btnRight?.addEventListener('click', nextSlide);
 
 const prevSlide = function () {
   if (curSlide === 0) curSlide = maxSlide - 1;
@@ -247,4 +247,4 @@ const prevSlide = function () {
   goToSlide(curSlide);
 };
 
-btnLeft.addEventListener('click', prevSlide);
+btnLeft?.addEventListener('click', prevSlide);
