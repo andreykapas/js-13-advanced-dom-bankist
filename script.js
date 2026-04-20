@@ -235,7 +235,6 @@ const createDots = function () {
     );
   });
 };
-createDots();
 
 const activateDot = function (/** @type {number} */ slide) {
   document
@@ -253,7 +252,12 @@ const goToSlide = function (/** @type {number} */ slide) {
   );
 };
 
-goToSlide(0);
+const init = function () {
+  createDots();
+  activateDot(0);
+  goToSlide(0);
+};
+init();
 
 const nextSlide = function () {
   if (curSlide === maxSlide - 1) curSlide = 0;
